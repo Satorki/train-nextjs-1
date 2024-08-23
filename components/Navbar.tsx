@@ -1,23 +1,53 @@
-import React from 'react'
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-dark bg-primary navbar-expand">
-        <div className="container">
-          <a className="navbar-brand" href="/">About</a>
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="/"><span>Home</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/add-item"><span>AddItem</span></a>
-            </li>
-          </ul>
-        </div>
+      <nav className="navbar">
+        <ul>
+          <li className="navList">
+            <Link href="/about" className="navLink">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="navLink">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
-    </>
-  )
-}
 
-export default Navbar
+      <style jsx>{`
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 1rem;
+          color: #fff;
+        }
+
+        .navList {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+        }
+
+        .navLink {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        .navLink:hover {
+          text-decoration: underline;
+        }
+
+        .active {
+          text-decoration: underline;
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default Navbar;
