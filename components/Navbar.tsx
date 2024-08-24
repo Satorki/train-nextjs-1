@@ -4,13 +4,13 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <ul>
-          <li className="navList">
+        <ul className="navList">
+          <li className="navLink">
             <Link href="/about" className="navLink">
               About
             </Link>
           </li>
-          <li>
+          <li className="navLink">
             <Link href="/contact" className="navLink">
               Contact
             </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
           justify-content: space-between;
           align-items: center;
           padding: 1rem 1rem;
-          color: #fff;
+          color: var(--first-color);
         }
 
         .navList {
@@ -34,7 +34,6 @@ const Navbar = () => {
         }
 
         .navLink {
-          color: #fff;
           text-decoration: none;
         }
 
