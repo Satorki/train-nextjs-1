@@ -9,10 +9,21 @@
   --background-c-end: #e35e5f;
 }
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Jura";
+  src: url("../public/fonts/Jura/Jura-VariableFont_wght.ttf") format("woff2");
+}
+
+
 body {
   height: 100vh;
   background: linear-gradient(
     var(--background-c-end) 0%,
     var(--background-c-start) 100%
   );
+
 }

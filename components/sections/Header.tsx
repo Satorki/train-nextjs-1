@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Navbar from "./Navbar";
+import Navbar from "../elements/Navbar";
+import PhoneButton from "../elements/PhoneButton";
 
 const Header = () => (
   <>
@@ -12,6 +13,7 @@ const Header = () => (
           height={80}
         />
         <Navbar />
+        <PhoneButton />
       </div>
     </div>
     

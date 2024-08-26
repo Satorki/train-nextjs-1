@@ -6,14 +6,16 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="navList">
           <li className="navLink">
-            <Link href="/about" className="navLink">
-              About
-            </Link>
+            <Link href="/about">ABOUT</Link>
           </li>
           <li className="navLink">
-            <Link href="/contact" className="navLink">
-              Contact
-            </Link>
+            <Link href="/Services">SERVICES</Link>
+          </li>
+          <li className="navLink">
+            <Link href="/Projects">PROJECTS</Link>
+          </li>
+          <li className="navLink">
+            <Link href="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>
@@ -25,12 +27,14 @@ const Navbar = () => {
           align-items: center;
           padding: 1rem 1rem;
           color: var(--first-color);
+          font-size: 1.7rem;
+          font-family: "Jura";
         }
 
         .navList {
           list-style: none;
           display: flex;
-          gap: 1rem;
+          gap: 2rem;
         }
 
         .navLink {
@@ -39,6 +43,8 @@ const Navbar = () => {
 
         .navLink:hover {
           text-decoration: underline;
+          cursor: pointer;
+          color: var(--background-c-end);
         }
 
         .active {
