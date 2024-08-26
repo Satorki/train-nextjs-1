@@ -5,8 +5,8 @@
 :root {
   --first-color: #fff;
   --second-color: #000;
-  --background-c-start: #850001;
-  --background-c-end: #e35e5f;
+  --background-color-start: #850001;
+  --background-color-end: #e35e5f;
 }
 
 @font-face {
@@ -22,8 +22,8 @@
 body {
   height: 100vh;
   background: linear-gradient(
-    var(--background-c-end) 0%,
-    var(--background-c-start) 100%
+    var(--background-color-end) 0%,
+    var(--background-color-start) 100%
   );
 
 }

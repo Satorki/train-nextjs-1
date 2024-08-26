@@ -1,11 +1,12 @@
 // pages/index.tsx
 import React from "react";
 import Layout from "../layouts/Layout";
+import Hero from "@/components/sections/Hero";
 
 const Home: React.FC = () => {
   return (
     <Layout>
-      <h2>Welcome to Next.js training session!</h2>
+      <Hero />
     </Layout>
   );
 };

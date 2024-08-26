@@ -7,7 +7,7 @@ const PhoneButton = () => {
       <style jsx>
         {`
           .phoneIcon {
-            color: var(--first-color);
+            fill: var(--first-color);
             font-size: 2rem;
             margin-bottom: 5px;
           }

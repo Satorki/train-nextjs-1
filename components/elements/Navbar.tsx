@@ -44,7 +44,7 @@ const Navbar = () => {
         .navLink:hover {
           text-decoration: underline;
           cursor: pointer;
-          color: var(--background-c-end);
+          color: var(--background-color-end);
         }
 
         .active {
