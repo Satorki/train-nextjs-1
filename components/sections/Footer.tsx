@@ -8,7 +8,13 @@ const Footer = () => {
       <span>
         <SlHeart fill="var(--background-color-end)" size={15} />
       </span>
-      by Satorki
+      <a
+        href="https://github.com/Satorki/train-nextjs-1"
+        target="_blank"
+        rel="noreferrer"
+      >
+        by Satorki
+      </a>
       <style jsx>{`
         .footer {
           display: flex;
@@ -20,6 +26,13 @@ const Footer = () => {
           color: var(--first-color);
           font-family: "SpaceGrotesk";
           font-size: 0.8rem;
+        }
+
+        .footer a {
+          text-decoration: none;
+        }
+        .footer a:hover {
+          color: var(--background-color-end);
         }
       `}</style>
     </div>
